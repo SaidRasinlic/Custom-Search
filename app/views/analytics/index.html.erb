@@ -1,0 +1,71 @@
+<div class="dashboard-wrapper">
+  <div class='numbers-wrapper'>
+    <div class="number-of-searches">
+      <div class='total-searches numbers-analytic'>
+        <div class='header'>
+          Searches
+        </div>
+        <div class='number'>
+          <%=@total_searches%>
+        </div>
+      </div>
+      <div class='successful-searches numbers-analytic'>
+        <div class='header'>
+          Successful searches
+        </div>
+        <div class='number'>
+          <%=@successfull_searches.reduce(0){|sum, num| sum + num.counter}%>
+        </div>
+      </div>
+      <div class='unsuccesfull-searches numbers-analytic'>
+        <div class='header'>
+          Unsuccessful searches
+        </div>
+        <div class='number'>
+          <%=@unsuccessfull_searches.reduce(0){|sum, num| sum + num.counter}%>
+        </div>
+      </div>
+      <div class="number-of-articles numbers-analytic">
+        <div class='header'>
+          Articles
+        </div>
+        <div class='number'>
+          <%=@total_articles%>
+        </div>
+      </div>
+    </div>
+    <div class="most-searched">
+      <%= line_chart Query.where(user_id: @current_user).group_by_minute(:updated_at).count, ytitle: "Searches per minute" %>
+    </div>
+  </div>
+  <div class='searches-wrapper'>
+    <div class="found-searches">
+      <ul>
+        <li class='table-head'>
+          <div class='search-counter'>Count</div>
+          <div class="search-query">Successfull Search Query</div>
+        </li>
+        <% @successfull_searches.reverse.take(7).each do |search|%>
+          <li>
+            <div class='search-counter'><%= search.counter%></div>
+            <div class='search-query'><%= search.query%></div>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="not-found-searches">
+      <ul>
+        <li class='table-head'>
+          <div class='search-counter'>Count</div>
+          <div class="search-query">Unsuccessfull Search Query</div>
+        </li>
+        <% @unsuccessfull_searches.reverse.take(7).each do |search|%>
+          <li>
+            <div class='search-counter'><%= search.counter%></div>
+            <div class='search-query'><%= search.query%></div>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

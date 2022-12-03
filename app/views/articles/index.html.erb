@@ -1,0 +1,19 @@
+<div id="article-list">
+  <div class="search-box-wrapper">
+    <input type="text" id='index-search-box' placeholder="Search..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search...'">
+  </div>
+  <ul id="filter-articles">
+    <% @articles.each do |article| %>
+      <li>
+        <%= render "article_tile", article: article %>
+      </li>
+    <%end%>
+  </ul>
+</div>
+<div class="text-centar margin-top-5 index-welcome-wrapper" id='index-welcome'>
+  <h1>Welcome, how can we help?</h1>
+</div>
+<div class="index-articles-container display-none" id='index-articles-container'>
+</div>
+<div id="search-results">
+</div>
