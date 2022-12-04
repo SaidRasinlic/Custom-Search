@@ -40,7 +40,7 @@ To get a local copy up and running follow these simple example steps.
   - `rails db:seed`
   - (Chain them all together: **rails db:create db:migrate db:seed**)
 - Run **rails s** in your terminal to start the server.
-- Enter **localhost:3000 OR http://localhost:3000/** in your browser to view the website
+- Enter **"localhost:3000" OR "http://localhost:3000/"** in your browser to view the website
 - **Congratulations! App should run successfully.**
 - _ERROR ISSUES:_ If you get error due to PG_SEARCH, you have to install pg extension in database, navigate to databse and copy-paste this; **`CREATE EXTENSION pg_trgm;`**. This should fix the error!
 
