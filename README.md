@@ -13,6 +13,7 @@ Custom-Search application in which the search box is linked to SEO and it displa
 
 - Ruby on Rails
 - PostgreSQL
+- Chartkick
 - PG_Search
 - VanillaJS
 - CSS
