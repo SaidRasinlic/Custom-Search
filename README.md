@@ -4,7 +4,9 @@ Custom-Search application in which the search box is linked to SEO and it displa
 
 
 ## Screenshot
-<p align="center"><img src="./app/assets/images/Custom-Search-Desktop.png" alt="Desktop Snapshot" /></>
+<p align="center"><img src="./app/assets/images/Custom-Search-Desktop.png" alt="Desktop Snapshot" />
+
+<p align="center"><img src="./app/assets/images/Custom-Search-Desktop-II.png" alt="Desktop Snapshot-II" />
 
 
 ## Built With
