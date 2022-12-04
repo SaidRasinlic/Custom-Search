@@ -1,12 +1,5 @@
-<div id="article-list">
+<div class="container">
   <div class="search-box-wrapper">
     <input type="text" id='index-search-box' placeholder="Search..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search...'">
   </div>
-  <ul id="filter-articles">
-    <% @articles.each do |article| %>
-      <li>
-        <%= render "article_tile", article: article %>
-      </li>
-    <%end%>
-  </ul>
 </div>

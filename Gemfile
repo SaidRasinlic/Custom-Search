@@ -71,6 +71,11 @@ group :test do
   gem 'webdrivers'
 end
 
+# RSpec test technology
+group :development, :test do
+  gem 'rspec-rails'
+end
+
 # Faker helps you generate realistic test data, and populate your database with more than a couple of records while you're doing development
 gem 'faker'
 
