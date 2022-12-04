@@ -6,4 +6,8 @@ class Query < ApplicationRecord
   scope :user, lambda { |user_id|
     where(user_id: user_id)
   }
+
+  validates :user_id, presence: true
+  validates :query, presence: true
+  validates :identifier, presence: true
 end
