@@ -38,7 +38,7 @@ To get a local copy up and running follow these simple example steps.
   - `rails db:create`
   - `rails db:migrate`
   - `rails db:seed`
-  - (Chain them all together: **rails db:create db:migrate db:seed**)
+    - **_OPTIONAL:_**(Chain them all together: **rails db:create db:migrate db:seed**)
 - Run **rails s** in your terminal to start the server.
 - Enter **"localhost:3000" OR "http://localhost:3000/"** in your browser to view the website
 - **Congratulations! App should run successfully.**
