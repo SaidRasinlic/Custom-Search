@@ -10,5 +10,5 @@ services:
         sync: false
       - key: DATABASE_URL
         fromDatabase:
-          name: custom_search_prod
+          name: postgres
           property: connectionString
