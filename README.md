@@ -13,6 +13,7 @@ Custom-Search application in which the search box is linked to SEO and it displa
 
 - Ruby on Rails
 - PostgreSQL
+- Chartkick
 - PG_Search
 - VanillaJS
 - CSS
@@ -32,19 +33,19 @@ To get a local copy up and running follow these simple example steps.
 ### Installation, Setup and Usage
 
 - **Clone this [repo](https://github.com/SaidRasinlic/Custom-Search)**
-- Navigate to the correct directory **cd Budget-app** (case sensitive)
-- Run **bundle install** in your terminal (in case you need to update the gems run **bundle update**)
-- Run **yarn install**
+- Navigate to the correct directory **"cd Budget-app"** (case sensitive)
+- Run **"bundle install"** in your terminal (in case you need to update the gems run **"bundle update"**)
+- Run **"yarn install"**
 - Setup database configuration in config/database.yml and use your correct username and password to access PostgreSQL database
 - In your terminal run the following three commands:
   - `rails db:create`
   - `rails db:migrate`
   - `rails db:seed`
-  - (Chain them all together: **rails db:create db:migrate db:seed**)
+- **_OPTIONAL:_** Chain them all together: **"rails db:create db:migrate db:seed"**
 - Run **rails s** in your terminal to start the server.
-- Enter **http://localhost:3000/ or localhost:3000** on your browser to view page
+- Enter **"localhost:3000" OR "http://localhost:3000/"** in your browser to view the website
 - **Congratulations! App should run successfully.**
-- _ERROR ISSUES:_ If you get error due to PG_SEARCH, you have to install pg extension in database, navigate to databse and copy-paste this; `CREATE EXTENSION pg_trgm;`. This should fix the error!
+- _ERROR ISSUES:_ If you get error due to PG_SEARCH, you have to install pg extension in database, navigate to databse and copy-paste this; **`CREATE EXTENSION pg_trgm;`**. This should fix the error!
 
 
 ## Author
@@ -68,7 +69,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse 
+- Helpjuice 
 
 ## 📝 License
 
