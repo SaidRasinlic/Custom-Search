@@ -2,6 +2,9 @@
 
 Custom-Search application in which the search box is linked to SEO and it displays web statistics so that the user can see the most frequently searched articles and other data. A session is given per user at the start of running the site, and it will expire once you leave it.
 
+## Live Demo
+[Live Demo Link](https://custom-search.onrender.com)
+
 
 ## Screenshot
 <p align="center"><img src="./app/assets/images/Custom-Search-Desktop.png" alt="Desktop Snapshot" />
