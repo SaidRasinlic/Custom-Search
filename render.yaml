@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: rails
+    name: custom-search
     plan: free
     env: ruby
     buildCommand: "./bin/render-build.sh"
