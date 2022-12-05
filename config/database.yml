@@ -84,4 +84,5 @@ test:
 production:
   <<: *default
   database: custom_search_prod
+  url: <%= ENV['DATABASE_URL'] %>
   
