@@ -1,0 +1,18 @@
+databases:
+  - name: custom-search
+    databaseName: custom_search_prod"
+    user: said_rasinlic
+
+services:
+  - type: web
+    name: custom-search
+    env: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: custom-search
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
