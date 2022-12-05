@@ -74,3 +74,56 @@ a {
 #user-tile {
   width: 100%;
 }
+
+.dashboard-wrapper {
+  margin: 10px auto;
+  padding: 0 10px;
+}
+
+.dashboard-wrapper ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.dashboard-wrapper li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  height: 30px;
+}
+
+.number-of-searches {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.numbers-analytic {
+  border-radius: 5px;
+  background: rgb(235, 235, 235);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.searches-wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 300px;
+}
+
+
+.found-searches {
+  width: 50%;
+}
+
+.not-found-searches {
+  width: 50%;
+}

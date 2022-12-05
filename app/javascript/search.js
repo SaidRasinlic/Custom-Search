@@ -7,7 +7,6 @@ window.onload = () => {
   let identifier = Date.now();
 
   const getData = debounce(async () => {
-    console.log("getdata search start");
     const result = await post(
       {
         search: searchBox.value.trim().replace(/[?.!]/g, "").toLowerCase(),
@@ -15,8 +14,6 @@ window.onload = () => {
       },
       token
     );
-    console.log("getdata search end");
-    console.log(result);
   }, 500);
 
   if (searchBox) {
