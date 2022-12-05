@@ -17,20 +17,20 @@
           <%=@successfull_searches.reduce(0){|sum, num| sum + num.counter}%>
         </div>
       </div>
-      <div class='unsuccesfull-searches numbers-analytic'>
-        <div class='header'>
-          Unsuccessful searches
-        </div>
-        <div class='number'>
-          <%=@unsuccessfull_searches.reduce(0){|sum, num| sum + num.counter}%>
-        </div>
-      </div>
       <div class="number-of-articles numbers-analytic">
         <div class='header'>
           Articles
         </div>
         <div class='number'>
           <%=@total_articles%>
+        </div>
+      </div>
+      <div class='unsuccesfull-searches numbers-analytic'>
+        <div class='header'>
+          Unsuccessful searches
+        </div>
+        <div class='number'>
+          <%=@unsuccessfull_searches.reduce(0){|sum, num| sum + num.counter}%>
         </div>
       </div>
     </div>
