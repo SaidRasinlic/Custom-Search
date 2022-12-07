@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema[7.0].define(version: 2022_12_03_121433) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "pg_trgm"
   enable_extension "plpgsql"
 
   create_table "articles", force: :cascade do |t|
@@ -22,12 +21,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_03_121433) do
     t.datetime "updated_at", null: false
     t.index ["body"], name: "index_articles_on_body"
     t.index ["title"], name: "index_articles_on_title"
-  end
-
-  create_table "bands", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "queries", force: :cascade do |t|
