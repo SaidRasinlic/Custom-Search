@@ -9,6 +9,6 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 50.times do
-  Article.create(title: Faker::Book.title,
+  Article.create(title: Faker::Book.unique.title,
                  body: Faker::Lorem.paragraph(sentence_count: 4))
 end
